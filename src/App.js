@@ -1,8 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Navbar from './components/Navbar';
+import Section from './components/Section/Section';
+import Footer from './components/Footer';
 
-function App() {
-    return <div className='App'></div>;
-}
+const App = () => {
+    return (
+        <Container>
+            <Navbar />
+            <Section />
+            <Footer />
+        </Container>
+    );
+};
+
+const Container = styled.div`
+    padding: 0;
+    margin: 0;
+    background: #2c6dff;
+    height: 100vh;
+`;
 
 export default App;
